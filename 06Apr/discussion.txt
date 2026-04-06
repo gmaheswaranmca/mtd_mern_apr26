@@ -1,0 +1,100 @@
+MERN - Full Stack 
+
+client      ->  server      -> db
+(fronent)       (backend)      persistent store 
+UI              App logic 
+
+client : React JS | Angular | Vue JS 
+    (Javascript | Typescript)
+    UI: HTML/CSS, Bootstrap
+server: JS (express JS) | Py (Fast/Flask/Django) | Java (SB) | C# | Go 
+    (REST API)
+Db: RDBMS (SQL): oracle, sql server, mysql, sqlite, postgres
+    No SQL: Mongo, Cassandra
+
+MERN - Full Stack
+    client -> server -> db 
+    React JS -> Express JS / Node JS -> Mongo DB 
+
+Mongo DB:
+    Cloud Mongo DB Server 
+    Or 
+    Local Mongo DB Server
+
+Working with 
+     Cloud Mongo DB Server
+     1. go to "mongodb.com" or search mongo cloud 
+     2. sign up via google account 
+     3. Cluster -> Build a cluster 
+        Option: Free (512 MB, shared RAM, shared CPU)
+        Cluster Name: Cluster0  (Default)
+        Cloud: AWS 
+        Region: Mumbai ap-south-1
+        -> Create Deployment
+        !Under Deployment 
+     4. Side Menu Bar-> Clusters 
+        If "Connect" is there 
+        we may connect from our computer
+        Need: 
+            1. username 
+            2. network inbound connection 
+     5. Under Security in Left Side Menu Bar 
+        -> Database and Network Access 
+        Username: mahesh
+        Password: 1234
+        Built-in-Role:Atlas Admin 
+        -> Add User  
+    6. Under Security in Left Side Menu Bar 
+        -> Database and Network Access
+        -> IP Access List
+        -> Add IP Access List Entry 
+           Access List Entry: 0.0.0.0/0
+           (Everyone from everywhere) 
+        -> Confirm 
+    7. Ready to connect to cloud mongo server 
+    7.1. Connect via Mongo Shell 
+        Side Menu Bar 
+        -> Clusters 
+        -> Connect 
+        -> Shell 
+            -> I dont have Mongo Shell 
+            -> Download the shell 
+            -> Install shell 
+            -> Terminal or Command Prompt 
+            $ mongosh --version
+            It displayed the version. 
+        -> Copy connection string 
+            mongosh "mongodb+srv://cluster0.we7nuaw.mongodb.net/" --apiVersion 1 --username mahesh
+        -> Extract only the connection string 
+           !Modify it 
+           mongodb+srv://cluster0.we7nuaw.mongodb.net/
+
+           ->
+
+           mongodb+srv://username:password@cluster0.we7nuaw.mongodb.net/
+
+           -> 
+           mongodb+srv://mahesh:1234@cluster0.we7nuaw.mongodb.net/
+
+           -> 
+           mongosh "connectionString"
+
+           -> 
+    7.2 Give the mongosh along with connstr in the terminal:
+           mongosh "mongodb+srv://mahesh:1234@cluster0.we7nuaw.mongodb.net/"
+        We connected to the server. 
+        Test> 
+        is the mongo shell. 
+    
+    
+
+            
+Cloud :
+    Distributed Networking 
+    Cluster 
+    Saas (Software as a service)
+    Cloud 
+
+
+
+
